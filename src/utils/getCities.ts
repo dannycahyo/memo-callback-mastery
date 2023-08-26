@@ -1,8 +1,16 @@
+import { matchSorter } from "match-sorter";
 import cities from "../json/USCities.json";
 
-const getAllCities = () => cities;
+import type { City } from "../types/City";
 
-const getCityByCityName = (cityName: string) =>
-  cities.find((city) => city.name === cityName);
+const getCityByCityName = (cityName: string): City[] => {
+  if (cityName) {
+    return matchSorter(cities, cityName, {
+      keys: ["name"],
+    });
+  } else {
+    return cities;
+  }
+};
 
-export { getAllCities, getCityByCityName };
+export { getCityByCityName };
