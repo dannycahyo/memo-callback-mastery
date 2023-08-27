@@ -26,6 +26,7 @@ export const useApiRequest = <T>({
     apiFunctionRef.current = apiFunction;
   }, [apiFunction]);
 
+  // useCallback is used to prevent infinite loops
   const fetchData = useCallback(async () => {
     try {
       setIsLoading(true);

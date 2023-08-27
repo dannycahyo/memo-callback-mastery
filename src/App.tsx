@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { useForceReRender } from "./hooks/useForceReRender";
 import { useDebounce } from "./hooks/useDebounce";
 import { getCityByCityName } from "./utils/getCities";
@@ -12,13 +12,25 @@ function App() {
   const [city, setCity] = useState<string>(localStorage.getItem("city") ?? "");
   const debounceCity = useDebounce({ value: city, delay: 1000 });
 
-  // Uncomment this code below to optimize the performance of this expensive calculation. Don't forget to import the useMemo package!
-  // const allCities = useMemo(() => {
-  //   return getCityByCityName(debounceCity);
-  // }, [debounceCity]);
+  //  An example of appropriate optimization
+  const allCities = useMemo(() => {
+    return getCityByCityName(debounceCity);
+  }, [debounceCity]);
 
-  const allCities = getCityByCityName(debounceCity);
-  const first100Cities = allCities?.slice(0, 100);
+  // An example of unnecessary & inappropriate optimization
+  const first100Cities = useMemo(() => {
+    return allCities?.slice(0, 100);
+  }, [allCities]);
+
+  // An example of unnecessary & inappropriate optimization
+  const handleCityChange = useCallback(() => {
+    setCity(debounceCity);
+  }, [debounceCity]);
+
+  // An example of unnecessary & inappropriate optimization
+  const handleResetCity = useCallback(() => {
+    setCity("");
+  }, []);
 
   useEffect(() => {
     if (!localStorage.getItem("city")) {
@@ -40,9 +52,9 @@ function App() {
               type="text"
               id="city"
               value={city}
-              onChange={(e) => setCity(e.target.value)}
+              onChange={handleCityChange}
             />
-            <button onClick={() => setCity("")}>Clear</button>
+            <button onClick={handleResetCity}>Clear</button>
           </div>
           <div>
             <Cities cities={first100Cities} />
