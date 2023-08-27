@@ -22,10 +22,13 @@ function App() {
     return allCities?.slice(0, 100);
   }, [allCities]);
 
-  // An example of unnecessary & inappropriate optimization
-  const handleCityChange = useCallback(() => {
-    setCity(debounceCity);
-  }, [debounceCity]);
+  // An example of unnecessary inappropriate optimization
+  const handleCityChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setCity(e.target.value);
+    },
+    [],
+  );
 
   // An example of unnecessary & inappropriate optimization
   const handleResetCity = useCallback(() => {
