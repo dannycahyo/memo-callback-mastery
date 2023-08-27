@@ -9,6 +9,7 @@ A project demonstrating the optimal use cases for `useMemo` and `useCallback` ho
 - [Usage](#usage)
 - [Features](#features)
 - [Best Practices](#best-practices)
+- [Presentation Slides](#presentation-slides)
 
 ## Introduction
 
@@ -67,3 +68,5 @@ Both useMemo and useCallback can be used for two main reasons:
 
 2. Computationally Expensive Calculations: When a function's execution is computationally expensive and its result doesn't change frequently, using useMemo to memoize the result can optimize the component's rendering performance.
 
+## Presentation Slides
+The presentation slides for this project can be found in the `slides` directory from the root of the repository. To view and get the full experience of the slides, it's recommended to use the [Marp for VS Code extension](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode).
