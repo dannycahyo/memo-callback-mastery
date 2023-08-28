@@ -1,6 +1,6 @@
 ---
 title: When to useMemo and useCallback?
-author: Danny Dwi Cahyono
+author: Danny Dwi Cahyono 
 marp: true
 paginate: true
 theme: default
@@ -33,8 +33,7 @@ But hold on, are we wielding these hooks effectively? Or have we fallen into the
 🎭 Imagine a world of React components, a landscape known all too well. I find myself in the midst of the mundane, using JSX, `useState`, `useEffect`, `useReducer`. etc.
 
 🎤 "Is there more to discover?" I wonder. Little do I know, the path to optimization awaits.
-
-🎥 **Show an image of developers in front of screens, depicting the familiarity of React concepts.**
+![Familiarity_Memes](https://media.tenor.com/s8hIm9KshIAAAAAd/theres-something-very-familiar-about-all-this-deja-vu.gif)
 
 ---
 
@@ -44,7 +43,7 @@ But hold on, are we wielding these hooks effectively? Or have we fallen into the
 
 🎤 "Look at the efectivity! See how components are skipping re-rendering!" I exclaim.
 
-🎥 **Show an image of developers with bright eyes, discovering the power of `useMemo` and `useCallback`.**
+![Mind_Blown](https://media.tenor.com/bD9vHNiR1rQAAAAd/boom-mind-blown.gif)
 
 ---
 
@@ -62,8 +61,6 @@ But hold on, are we wielding these hooks effectively? Or have we fallen into the
 
 🎤 "It's all about maintaining identity," I proclaim. With callbacks and memoization, my components stand strong.
 
-🎥 **Show an image of realization, with the light of understanding illuminating the path ahead.**
-
 ---
 
 # The Temptation of Excess
@@ -72,7 +69,7 @@ But hold on, are we wielding these hooks effectively? Or have we fallen into the
 
 🎤 "Optimization is power, maybe I should do it everywhere"
 
-🎥 **Show an image of developers surrounded by `useMemo` and `useCallback` banners, symbolizing the temptation to over-optimize.**
+![Temptation_Memes](https://media.tenor.com/A0sln2WiUTwAAAAd/the-temptations.gif)
 
 ---
 
@@ -82,15 +79,17 @@ But hold on, are we wielding these hooks effectively? Or have we fallen into the
 
 🤔 "Must every corner be optimized?" I wonder. The road to performance doesn't always require excess.
 
+![Realization_Memes](https://media.tenor.com/nFmROc_Ptw0AAAAC/shook-muppet.gif)
+
 ---
 
 # The Promise of Simplicity
 
 🎭 It dawns on me that simplicity holds its own allure. My codebase need not be a maze of hooks. It's not about avoidance, but about thoughtful application.
 
-🎤 "Optimization should enhance, not complicate," I affirm. `useMemo` and `useCallback` find their place where they truly matter.
+🎤 "Optimization should enhance, not complicate," I affirm `useMemo` and `useCallback` find their place where they truly matter.
 
-🎥 **Show an image of realization, with clarity shining through the complexity.**
+![Realization_Memes](https://media.tenor.com/nFmROc_Ptw0AAAAC/shook-muppet.gif)
 
 ---
 
@@ -111,7 +110,7 @@ But hold on, are we wielding these hooks effectively? Or have we fallen into the
 
 🎤 "Optimization is not just about speed. It's about knowing when to let things be," I declare.
 
-🎥 **Show an image of developers in a serene landscape, symbolizing the culmination of understanding.**
+![Nod_Memes](https://media.tenor.com/n2n-ogXgUoUAAAAC/yes-nodding.gif)
 
 ---
 
@@ -124,7 +123,6 @@ But hold on, are we wielding these hooks effectively? Or have we fallen into the
 
 🎤 Performance optimizations are not free. It's ALWAYS come with a cost but do NOT always come with a benefit to offset that cost. "Therefore, optimize responsibly."!
 
-🎥 **Show an image of the city basking in the glow of optimization, with the sun setting over the horizon.**
 
 ---
 
