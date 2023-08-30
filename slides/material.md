@@ -12,7 +12,7 @@ transition: fade
 ![Questioning_Memes](https://media.tenor.com/3qErfSDAKhYAAAAC/confused-jackie-chan.gif)
 
 ---
-# Introduction: Unleashing the Power of Hooks
+# Introduction
 
 As developers, we're on a quest to craft highly performant and responsive applications. Enter `useMemo` and `useCallback` - the dynamic duo of React hooks that promise to optimize our components.
 
@@ -30,7 +30,7 @@ But hold on, are we wielding these hooks effectively? Or have we fallen into the
 
 # The Boredom of Familiarity
 
-🎭 Imagine a world of React components, a landscape known all too well. I find myself in the midst of the mundane, using JSX, `useState`, `useEffect`, `useReducer`. etc.
+🎭 Imagine a world of React components, a landscape known all too well. I find myself in boring situation, using `JSX`, `useState`, `useEffect`, `useReducer`. etc.
 
 🎤 "Is there more to discover?" I wonder. Little do I know, the path to optimization awaits.
 ![Familiarity_Memes](https://media.tenor.com/s8hIm9KshIAAAAAd/theres-something-very-familiar-about-all-this-deja-vu.gif)
@@ -39,7 +39,7 @@ But hold on, are we wielding these hooks effectively? Or have we fallen into the
 
 # The Excitement of Exploration
 
-🎭 Eager for new horizons, I embark on a quest to optimize. `useMemo` and `useCallback` become my companions, and excitement brews as I witness the magic of memoization.
+🎭 Eager for new horizons, I try to learn and experiment. `useMemo` and `useCallback` become my companions, and excitement comes as I witness the magic of memoization.
 
 🎤 "Look at the efectivity! See how components are skipping re-rendering!" I exclaim.
 
@@ -47,25 +47,18 @@ But hold on, are we wielding these hooks effectively? Or have we fallen into the
 
 ---
 
-# The Challenge of Conundrums
-
-🎭 And challenges await and arise. I encounter an infinite loop within `useEffect`. Frustration ensues, but a silver lining emerges: the importance of `useCallback` and `useMemo` for non-primitive values.
-
-🔍 "Referential equality," I whisper, as light dawns upon me.
-
----
-
 # A New Dawn of Understanding
 
-🎭 As the fog of confusion clears, I see the truth about referential equality. No longer lost in the loop, I embrace the power of `useMemo` and `useCallback`.
+🎭 And challenges await and arise. I find an infinite loop within `useEffect`. But then I realize this is the use of `useCallback` and `useMemo` comes into play.
 
-🎤 "It's all about maintaining identity," I proclaim. With callbacks and memoization, my components stand strong.
+🔍 "Referential equality" 
+🔍 "It's all about maintaining identity"
 
 ---
 
 # The Temptation of Excess
 
-🎭 As days turn into nights, I find myself in the throes of temptation. `useMemo` and `useCallback` beckon, and the desire to optimize every corner grows.
+🎭 As days turn into nights, I find myself in the misery of temptation. `useMemo` and `useCallback`, and the desire to optimize every corner grows.
 
 🎤 "Optimization is power, maybe I should do it everywhere"
 
@@ -85,7 +78,7 @@ But hold on, are we wielding these hooks effectively? Or have we fallen into the
 
 # The Promise of Simplicity
 
-🎭 It dawns on me that simplicity holds its own allure. My codebase need not be a maze of hooks. It's not about avoidance, but about thoughtful application.
+🎭 It dawns on me that simplicity also important. My codebase need not be a maze of hooks. It's not about avoidance, but about thoughtful application.
 
 🎤 "Optimization should enhance, not complicate," I affirm `useMemo` and `useCallback` find their place where they truly matter.
 
@@ -98,9 +91,8 @@ But hold on, are we wielding these hooks effectively? Or have we fallen into the
 🎬 Now, let's dive into a live demonstration of the concepts we've discussed!
 
 1. Analyzing and Finding a performance issue
-2. Optimizing an expensive calculation
-3. Applying the Optimization to the App
-4. Measuring the Performance
+2. Applying the Optimization to the App
+3. Measuring the Performance
 
 ---
 
@@ -132,4 +124,4 @@ But hold on, are we wielding these hooks effectively? Or have we fallen into the
 
 🎤 Thank you for joining me on this adventure into the world of `useMemo` and `useCallback`!
 
-🎥 **Show an image of a microphone, inviting questions from the audience.**
+![Question_MEMES](https://media.tenor.com/6DUyjTKrrwAAAAAC/bh187-spongebob.gif)
