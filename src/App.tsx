@@ -21,11 +21,7 @@ function App() {
   const first100Cities = allCities?.slice(0, 100);
 
   useEffect(() => {
-    if (!localStorage.getItem("city")) {
-      localStorage.setItem("city", debounceCity);
-    } else {
-      localStorage.setItem("city", debounceCity);
-    }
+    localStorage.setItem("city", debounceCity);
   }, [debounceCity]);
 
   return (
