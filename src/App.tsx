@@ -36,11 +36,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (!localStorage.getItem("city")) {
-      localStorage.setItem("city", debounceCity);
-    } else {
-      localStorage.setItem("city", debounceCity);
-    }
+    localStorage.setItem("city", debounceCity);
   }, [debounceCity]);
 
   return (
